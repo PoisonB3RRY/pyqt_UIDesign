@@ -11,8 +11,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
 
-    print(MainWindow.__mro__)
-
     mainWindow = MainWindow()
     mainWindow.show()
 
