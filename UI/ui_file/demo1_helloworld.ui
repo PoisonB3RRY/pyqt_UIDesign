@@ -10,22 +10,27 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>云管综合发布系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../res/spdb_logo.svg</normaloff>../res/spdb_logo.svg</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>140</y>
-      <width>71</width>
-      <height>16</height>
+      <x>-1</x>
+      <y>0</y>
+      <width>801</width>
+      <height>51</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Hello World</string>
-    </property>
+    <layout class="QGridLayout" name="gridLayout"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
