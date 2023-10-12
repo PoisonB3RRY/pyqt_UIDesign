@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'demo1_helloworld.ui'
+# Form implementation generated from reading ui file 'C:\Users\nickj\FromGitHub\pyqt_UIDesign\UI\ui_file\demo1_helloworld.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -13,11 +13,18 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
+        MainWindow.setMouseTracking(False)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("C:\\Users\\nickj\\FromGitHub\\pyqt_UIDesign\\UI\\ui_file\\../res/spdb_logo.svg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(290, 140, 71, 16))
-        self.label.setObjectName("label")
+        self.gridLayoutWidget = QtWidgets.QWidget(parent=self.centralwidget)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(-1, 0, 801, 51))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 22))
@@ -32,5 +39,4 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "Hello World"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "云管综合发布系统"))
