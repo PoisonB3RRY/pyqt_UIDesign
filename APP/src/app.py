@@ -1,6 +1,6 @@
 import sys
 from PyQt6.QtWidgets import *
-from UI.src.Ui_demo1_helloworld import Ui_MainWindow
+from UI.template.Ui_demo1_helloworld import Ui_MainWindow
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
