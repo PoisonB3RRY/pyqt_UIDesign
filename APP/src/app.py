@@ -1,17 +1,17 @@
 import sys
-from PyQt6.QtWidgets import *
-from UI.template.Ui_demo1_helloworld import Ui_MainWindow
+from PyQt6.QtWidgets import QApplication
+# from UI.template.Ui_demo1_helloworld import Ui_MainWindow
+from UI.src.MainWindows import MainWindow
 
-class MainWindow(QMainWindow, Ui_MainWindow):
+class SIPS(MainWindow):
 
     def __init__(self):
         super().__init__()
-        self.setupUi(self)
+        # self.setupUi(self)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
 
-    mainWindow = MainWindow()
-    mainWindow.show()
+    sips = SIPS()
 
     sys.exit(app.exec())
