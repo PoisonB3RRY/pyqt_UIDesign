@@ -1,5 +1,5 @@
 from PyQt6 import QtCore
-from PyQt6.QtWidgets import QWidget,QMainWindow
+from PyQt6.QtWidgets import QWidget,QMainWindow,QVBoxLayout
 from PyQt6.QtGui import QIcon,QPixmap
 from const_res_path import ResPath
 from CentralWidget import CentralWidget
@@ -20,8 +20,10 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(self.icon)
         self.setWindowTitle('云管综合发布系统')
 
+
+        self.centralWidget = CentralWidget(parent=self)
         #加载CentralWidget
-        self.centralWidget = CentralWidget()
+        self.setCentralWidget(self.centralWidget)
 
 
         self.show()
