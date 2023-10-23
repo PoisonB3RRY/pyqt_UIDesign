@@ -5,4 +5,4 @@ from PyQt6.QtCore import Qt,pyqtSignal,QRect
 
 class CheckBoxHeader(QHeaderView):
 
-    ...
+    pass

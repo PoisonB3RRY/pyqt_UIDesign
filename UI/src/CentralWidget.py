@@ -18,16 +18,7 @@ class CentralWidget(QWidget):
         self.importedForm.setColumnCount(7)
 
         #设置表头
-        #第一列表头为全选复选框
-
-        CBWidget = QWidget()
-        CBWidget.columnName1CB = QCheckBox()
-        CBWidget.columnName1CB.setText('全选')
-        CBWidget.columnName1CB.setChecked(True)
-        CBLayout = QHBoxLayout()
-        CBLayout.addWidget(CBWidget.columnName1CB)
-        CBWidget.setLayout(CBLayout)
-        columnName1 = QTableWidgetItem(CBWidget)
+        #第一列表头为全选复选框,使用重写过的HeaderView
 
 
 
@@ -38,7 +29,6 @@ class CentralWidget(QWidget):
         columnName6 = QTableWidgetItem('镜像版本')
         columnName7 = QTableWidgetItem('操作')
 
-        self.importedForm.setHorizontalHeaderItem(0,columnName1)
         self.importedForm.setHorizontalHeaderItem(1,columnName2)
         self.importedForm.setHorizontalHeaderItem(2,columnName3)
         self.importedForm.setHorizontalHeaderItem(3,columnName4)
