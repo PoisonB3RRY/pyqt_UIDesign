@@ -61,6 +61,7 @@ class MainWindow(QMainWindow):
         self.menuBar.addAction(self.configMenu.menuAction())
 
         self.centralWidget = CentralWidget(parent=self)
+
         # 加载CentralWidget
         self.setCentralWidget(self.centralWidget)
 
