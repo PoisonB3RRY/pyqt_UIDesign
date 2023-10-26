@@ -3,10 +3,10 @@ from PyQt6.QtWidgets import QWidget,QVBoxLayout,QTableWidget,QTableWidgetItem,QC
 class CentralWidget(QWidget):
 
     def __init__(self,parent):
-        super().__init__()
-        self.setUpUI(parent)
+        super().__init__(parent)
+        self.setUpUI()
 
-    def setUpUI(self,parent):
+    def setUpUI(self):
         self.setObjectName('CentralWidget')
 
         self.verticalLayout = QVBoxLayout(self)

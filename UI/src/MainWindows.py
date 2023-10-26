@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QWidget,QMainWindow,QVBoxLayout,QMenuBar,QMenu,QApplication
+from PyQt6.QtWidgets import QWidget,QMainWindow,QVBoxLayout,QMenuBar,QMenu,QApplication,QTableWidget,QTableWidgetItem
 from PyQt6.QtGui import QIcon,QPixmap,QAction
 from PyQt6.QtCore import QRect
 from const_res_path import ResPath
@@ -19,6 +19,9 @@ class MainWindow(QMainWindow):
         self.icon.addPixmap(QPixmap(ResPath.SPDB_ICON_PATH),QIcon.Mode.Normal,QIcon.State.Off)
         self.setWindowIcon(self.icon)
         self.setWindowTitle('云管综合发布系统')
+
+        centralWidget = CentralWidget(parent=self)
+        self.setCentralWidget(centralWidget)
 
 
         #设置菜单栏
@@ -59,10 +62,6 @@ class MainWindow(QMainWindow):
 
         self.menuBar.addAction(self.fileMenu.menuAction())
         self.menuBar.addAction(self.configMenu.menuAction())
-
-        self.centralWidget = CentralWidget(parent=self)
-
-        # 加载CentralWidget
-        self.setCentralWidget(self.centralWidget)
+        self.setMenuBar(self.menuBar)
 
         self.show()
