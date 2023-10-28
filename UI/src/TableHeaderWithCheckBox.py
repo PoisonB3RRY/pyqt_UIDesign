@@ -29,7 +29,7 @@ class CheckBoxHeader(QHeaderView):
 
         if logicalIndex == 0:
             option = QStyleOptionButton()
-            option.rect = QRect(rect.x() + self._x_offset, rect.y() + self._y_offset, self._width , self._height)
+            option.rect = QRect(rect.x() + self._x_offset, rect.y() + self._y_offset, self._width, self._height)
             option.state = QStyle.StateFlag.State_Enabled | QStyle.StateFlag.State_Active
             if self.isOn == True:
                 option.state |= QStyle.StateFlag.State_On
