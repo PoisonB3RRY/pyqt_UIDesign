@@ -1,4 +1,5 @@
 from PyQt6.QtWidgets import QWidget,QVBoxLayout,QTableWidget,QTableWidgetItem,QCheckBox,QHBoxLayout
+from TableHeaderWithCheckBox import CheckBoxHeader
 
 class CentralWidget(QWidget):
 
@@ -19,8 +20,10 @@ class CentralWidget(QWidget):
 
         #设置表头
         #第一列表头为全选复选框,使用重写过的HeaderView
-
-
+        header_fields=['全选']
+        columnName1 = CheckBoxHeader()
+        self.importedForm.setHorizontalHeader(columnName1)
+        self.importedForm.setHorizontalHeaderLabels(header_fields)
 
         columnName2 = QTableWidgetItem('应用名称')
         columnName3 = QTableWidgetItem('Deployment')
