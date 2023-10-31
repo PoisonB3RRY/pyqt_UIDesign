@@ -30,7 +30,7 @@ class SuccessWidget(QWidget):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
 
-    item = QGraphicsSvgItem(ResPath.SUCCESS_ICON_PATH)
+    item = QGraphicsSvgItem(ResPath.FAILED_ICON_PATH)
     item.setFlag(QGraphicsItem.GraphicsItemFlag.ItemIsMovable)
     scene = QGraphicsScene()
     scene.addItem(item)
