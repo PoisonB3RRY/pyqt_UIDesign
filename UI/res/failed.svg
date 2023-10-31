@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 failed.svg FAILED -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="8.26772in" height="11.6929in"
+		viewBox="0 0 595.276 841.89" xml:space="preserve" color-interpolation-filters="sRGB" class="st3">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#ff3300;stroke:#cc3300;stroke-linecap:butt;stroke-width:6.375}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="4" v:index="2" v:groupContext="foregroundPage">
+		<title>FAILED</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="9"
+				v:shadowOffsetY="-9"/>
+		<g id="shape3-1" v:mID="3" v:groupContext="shape" transform="translate(257.953,-314.646)">
+			<title>工作表.3</title>
+			<path d="M153.07 765.35 A76.5354 76.5354 -180 1 0 0 765.35 A76.5354 76.5354 -180 1 0 153.07 765.35 ZM144.57 765.35 A68.0315
+						 68.0315 -180 1 0 8.5 765.35 A68.0315 68.0315 -180 1 0 144.57 765.35 Z" class="st1"/>
+		</g>
+		<g id="group4-3" transform="translate(290.927,-347.619)" v:mID="4" v:groupContext="group">
+			<title>工作表.4</title>
+			<g id="shape5-4" v:mID="5" v:groupContext="shape">
+				<title>工作表.5</title>
+				<path d="M87.12 765.23 L76.66 754.77 L43.56 787.87 L10.46 754.77 L0 765.23 L33.1 798.33 L0 831.43 L10.46 841.89 L43.56
+							 808.79 L76.66 841.89 L87.12 831.43 L54.02 798.33 L87.12 765.23 Z" class="st2"/>
+			</g>
+		</g>
+	</g>
+</svg>

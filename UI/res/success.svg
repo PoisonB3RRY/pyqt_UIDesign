@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 success.svg SUCCESS -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="8.26772in" height="11.6929in"
+		viewBox="0 0 595.276 841.89" xml:space="preserve" color-interpolation-filters="sRGB" class="st3">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#92d050;stroke:#339933;stroke-linecap:butt;stroke-width:6.375}
+		.st2 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>SUCCESS</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="9"
+				v:shadowOffsetY="-9"/>
+		<g id="group1-1" transform="translate(226.772,-420.316)" v:mID="1" v:groupContext="group">
+			<title>工作表.1</title>
+			<g id="shape2-2" v:mID="2" v:groupContext="shape">
+				<title>工作表.2</title>
+				<path d="M98.39 766.14 L38.63 822.63 L9.92 793.22 L0 802.67 L38.17 841.89 L48.2 832.55 L107.84 775.95 L98.39 766.14
+							 Z" class="st1"/>
+			</g>
+		</g>
+		<g id="shape8-4" v:mID="8" v:groupContext="shape" transform="translate(204.158,-381.654)">
+			<title>工作表.8</title>
+			<path d="M153.07 765.35 A76.5354 76.5354 -180 1 0 0 765.35 A76.5354 76.5354 -180 1 0 153.07 765.35 ZM144.57 765.35 A68.0315
+						 68.0315 -180 1 0 8.5 765.35 A68.0315 68.0315 -180 1 0 144.57 765.35 Z" class="st2"/>
+		</g>
+	</g>
+</svg>
