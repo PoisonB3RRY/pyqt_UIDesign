@@ -1,8 +1,10 @@
 import sys
 
-from PyQt6.QtWidgets import QWidget,QVBoxLayout,QApplication,QGraphicsScene,QGraphicsView,QGraphicsItem
-from PyQt6.QtGui import QColor,QPainter
-from PyQt6.QtSvgWidgets import QSvgWidget,QGraphicsSvgItem
+from PyQt6.QtGui import QPainter
+from PyQt6.QtSvg import QSvgRenderer
+from PyQt6.QtWidgets import QApplication, QWidget
+from PyQt6.QtCore import QSize
+
 from UI.src.const_res_path import ResPath
 
 
@@ -18,25 +20,24 @@ class SuccessWidget(QWidget):
     def setupUI(self,parent):
         self.setObjectName('Success')
 
-        self.vlayout = QVBoxLayout(self)
-        self.vlayout.setObjectName('Internal Layout')
+        # self.item = QGraphicsSvgItem(ResPath.SUCCESS_ICON_PATH)
+        # self.scene = QGraphicsScene()
+        # self.scene.addItem(self.item)
+        #
+        # self.view = QGraphicsView()
+        # self.view.setScene(self.scene)
+        # # self.view.show()
+        # self.view.setGeometry(300,300,100,100)
+        # self.view.show()
 
-        #创建QSvgWidget
-        self.successSvg = QSvgWidget(ResPath.SUCCESS_ICON_PATH,self)
-        self.vlayout.addWidget(self.successSvg)
-        self.setLayout(self.vlayout)
+        painter = QPainter()
+        svgRender = QSvgRenderer(ResPath.SUCCESS_ICON_PATH)
+
 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
 
-    item = QGraphicsSvgItem(ResPath.FAILED_ICON_PATH)
-    item.setFlag(QGraphicsItem.GraphicsItemFlag.ItemIsMovable)
-    scene = QGraphicsScene()
-    scene.addItem(item)
-
-    view = QGraphicsView()
-    view.setScene(scene)
-    view.show()
+    ex = SuccessWidget()
 
     sys.exit(app.exec())
