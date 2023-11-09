@@ -1,9 +1,9 @@
 import sys
 
-from PyQt6.QtGui import QPainter
+from PyQt6.QtGui import QPainter,QImage,QColor
 from PyQt6.QtSvg import QSvgRenderer
 from PyQt6.QtWidgets import QApplication, QWidget
-from PyQt6.QtCore import QSize
+from PyQt6.QtCore import QSize,Qt
 
 from UI.src.const_res_path import ResPath
 
@@ -32,6 +32,14 @@ class SuccessWidget(QWidget):
 
         painter = QPainter()
         svgRender = QSvgRenderer(ResPath.SUCCESS_ICON_PATH)
+        widgetSize = QSize(self.size())
+
+        img = QImage(QSize(widgetSize.width(), widgetSize.height()),QImage.Format.Format_ARGB32_Premultiplied)
+        img.fill(QColor(Qt.GlobalColor.transparent))
+
+
+
+
 
 
 
