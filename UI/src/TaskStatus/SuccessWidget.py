@@ -1,8 +1,9 @@
 import sys
 
-from PyQt6.QtGui import QPainter,QImage,QColor
+from PyQt6.QtGui import QPainter,QImage,QColor,QPixmap
 from PyQt6.QtSvg import QSvgRenderer
-from PyQt6.QtWidgets import QApplication, QWidget
+from PyQt6.QtSvgWidgets import QGraphicsSvgItem
+from PyQt6.QtWidgets import QApplication, QWidget, QGraphicsScene, QGraphicsView
 from PyQt6.QtCore import QSize,Qt
 
 from UI.src.const_res_path import ResPath
@@ -20,25 +21,21 @@ class SuccessWidget(QWidget):
     def setupUI(self,parent):
         self.setObjectName('Success')
 
-        # self.item = QGraphicsSvgItem(ResPath.SUCCESS_ICON_PATH)
-        # self.scene = QGraphicsScene()
-        # self.scene.addItem(self.item)
-        #
-        # self.view = QGraphicsView()
-        # self.view.setScene(self.scene)
-        # # self.view.show()
-        # self.view.setGeometry(300,300,100,100)
+        self.item = QGraphicsSvgItem(ResPath.SUCCESS_ICON_PATH)
+        self.item.setScale(0.15)
+        self.scene = QGraphicsScene(20,32,50,50)
+        self.scene.addItem(self.item)
+        self.item.setPos(0, 0)
+
+        self.scene.setBackgroundBrush(Qt.GlobalColor.blue)
+
+
+        self.view = QGraphicsView(self)
+        self.view.setScene(self.scene)
+        #后续将尺寸、坐标更改为TableWidgetItem的大小
+        self.view.setGeometry(0,0,100,100)
         # self.view.show()
-
-        painter = QPainter()
-        svgRender = QSvgRenderer(ResPath.SUCCESS_ICON_PATH)
-        widgetSize = QSize(self.size())
-
-        img = QImage(QSize(widgetSize.width(), widgetSize.height()),QImage.Format.Format_ARGB32_Premultiplied)
-        img.fill(QColor(Qt.GlobalColor.transparent))
-
-
-
+        self.show()
 
 
 
