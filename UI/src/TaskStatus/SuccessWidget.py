@@ -34,7 +34,6 @@ class SuccessWidget(QWidget):
         self.view.setScene(self.scene)
         #后续将尺寸、坐标更改为TableWidgetItem的大小
         self.view.setGeometry(0,0,100,100)
-        # self.view.show()
         self.show()
 
 
