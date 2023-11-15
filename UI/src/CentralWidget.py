@@ -1,5 +1,7 @@
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem, QCheckBox, QHBoxLayout
 from TableHeaderWithCheckBox import CheckBoxHeader
+from PyQt6.QtCore import Qt
+from CentralFormRow import ImportedRow
 
 
 class CentralWidget(QWidget):
@@ -47,3 +49,19 @@ class CentralWidget(QWidget):
         self.importedForm.verticalHeader().setStretchLastSection(False)
 
         self.verticalLayout.addWidget(self.importedForm)
+
+    #填充单行数据
+    def fillingRow(self):
+        #清空表中内容
+        self.cleanTable()
+
+        #依次插入各行内容
+
+        #首列插入CheckBox
+        firstCheckBox = QCheckBox(self)
+        firstCheckBox.setCheckState(Qt.CheckState.Unchecked)
+
+
+    #清空表中内容
+    def cleanTable(self):
+        self.importedForm.clearContents()
