@@ -3,5 +3,5 @@ from APP.src.FormDataObject import FormDataObject
 
 class ExcelDataHandle:
 
-    def importData(self):
+    def importData(self,data_path,sheetname):
         DataRowArray = []
